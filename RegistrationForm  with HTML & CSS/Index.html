@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- This is a simple registration form using HTML & CSS-->
+<html>
+
+<head>
+    <title>Registration Form using HTML & CSS</title>
+    <meta charset="utf-8">
+    <!-- link css to the html document-->
+    <link rel="stylesheet" href="./response.css">
+</head>
+
+<body bgcolor: "pink">
+    <h1>Student Registration Form</h1>
+    <div class="container" </body>
+        <div class="row">
+            <label for="fname">FIRST NAME</label>
+            <div class="col-90">
+                <input type="text" id="fname" placeholder="enter your firstname">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="lname">LAST NAME</label>
+            </div>
+            <div class="col-10">
+                <input type="text" id="last name" placeholder="enter your last name">
+            </div>
+        </div>
+        <div class="column">
+            <div class="col-10">
+                <label for="email">EMAIL</label>
+            </div>
+            <div class="col-90">
+                <input type="email" id="email" name="email" placeholder="like  XYZ@domainame">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="mobile">MOBILE NUMBER</label>
+            </div>
+            <div class="col-10">
+                <input type="tel" id="mobile" name="Mobile" placeholder="without +(91) 10 digits">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="gender" required>GENDER:</label>
+            </div>
+            <div class="col-90">
+                <input type="radio" id="male" name="gender" value="male">male
+                <input type="radio" id="female" name="gender" value="female" />female
+                <input type="radio" id="others" name="gender" value="prefer not to say" />others
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="dob">Date of birth</label>
+                <input type="Date" id="dob" name="dob">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="address">Address:</label>
+            </div>
+            <div class="col-90">
+                <textarea name="address" id="address" cols="30" rows="10"></textarea>
+                <input type="text" id="city" name="city" maxlength="10">
+                <input type="number" id="pin" name="pin" maxlength="6">
+                <input type="text" id="state" name="state">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="Qualification" required>Qualification:</label>
+                <select name="qualification" id="qualification">
+                    <option value=" ">select Qualification:</option>
+                    <option value="Post Graduation">PG</option>
+                    <option value="Graduation">Graduation</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="specialization">Specialization</label>
+                <input type="checkbox" class="specialization" id="cs" name="specialization[]" value="computer science">computer science<br/>
+                <input type="checkbox" class="specialization" id="computer design" name="specialization[]" value="computer design">Computer design<br/>
+                <input type="checkbox" class="specialization" id="cloud architect" name="specialization" value="cloud architect">Cloud Architect
+                <br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="password">password:</label>
+                <input type="password" id="password" name="password" maxlength="8">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <input type="submit" value="Registered" onclick="saveStudentDetails()">
+            </div>
+        </div>
+</body>
+
+</html>
